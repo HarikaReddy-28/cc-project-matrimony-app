@@ -3,27 +3,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const staticUsers = [
         {
             id: 1,
-            name: 'Alex Turner',
-            age: 28,
-            profession: 'Software Engineer',
-            location: 'New York',
-            photo: 'assets/portrait_man_1791522293548.png'
+            name: 'Conrad Fisher',
+            age: 18,
+            profession: 'Student (Pre-Med)',
+            location: 'Cousins Beach',
+            photo: 'https://static.wikia.nocookie.net/thesummeriturnedprettytrilogy/images/3/31/Conrad_S3_Portrait.jpg'
         },
         {
             id: 2,
-            name: 'Emma Roberts',
-            age: 26,
-            profession: 'Marketing Manager',
-            location: 'San Francisco',
-            photo: 'assets/portrait_woman_1791522328761.png'
+            name: 'Belly Conklin',
+            age: 16,
+            profession: 'Student',
+            location: 'Cousins Beach',
+            photo: 'https://static.wikia.nocookie.net/thesummeriturnedprettytrilogy/images/c/c0/TSITP_Belly_S1_Portrait.jpg'
         },
         {
             id: 3,
-            name: 'Jordan Lee',
-            age: 30,
-            profession: 'Architect',
-            location: 'Chicago',
-            photo: 'assets/portrait_person_1791522306766.png'
+            name: 'Jeremiah Fisher',
+            age: 17,
+            profession: 'Lifeguard / Student',
+            location: 'Cousins Beach',
+            photo: 'https://static.wikia.nocookie.net/thesummeriturnedprettytrilogy/images/e/e6/Jeremiah_S3_Portrait.jpg'
         }
     ];
 
