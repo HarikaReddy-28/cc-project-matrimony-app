@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OliveMatch - Premium Matrimony</title>
+    <meta name="description" content="Find your perfect match with OliveMatch.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="logo">OliveMatch</div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Screen 1: User Registration/Upload -->
+            <section id="registration-screen" class="screen active">
+                <div class="card glass">
+                    <h1>Find Your Perfect Match</h1>
+                    <p class="subtitle">Join our premium matrimony service today.</p>
+                    
+                    <form id="registration-form">
+                        <div class="form-group">
+                            <label for="user-photo" class="photo-upload-label">
+                                <div class="photo-placeholder" id="photo-preview">
+                                    <span>+ Upload Photo</span>
+                                </div>
+                            </label>
+                            <input type="file" id="user-photo" accept="image/*" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-name">Full Name</label>
+                            <input type="text" id="user-name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-age">Age</label>
+                            <input type="number" id="user-age" min="18" placeholder="Enter your age" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-profession">Profession</label>
+                            <input type="text" id="user-profession" placeholder="Your profession" required>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn">Discover Matches</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Screen 2: Static Details of Pre-Registered Users -->
+            <section id="users-screen" class="screen">
+                <div class="header-section">
+                    <h2>Potential Matches</h2>
+                    <p>Here are some of our premium members.</p>
+                </div>
+                
+                <div class="users-grid" id="users-grid">
+                    <!-- Populated by JS -->
+                </div>
+
+                <div class="action-section">
+                    <button id="find-match-btn" class="btn primary-btn pulse">Find My Match</button>
+                </div>
+            </section>
+
+            <!-- Screen 3: It's a Match! -->
+            <section id="match-screen" class="screen">
+                <div class="match-container glass">
+                    <h1 class="match-title">It's a Match!</h1>
+                    <div class="match-avatars">
+                        <div class="avatar-wrap user-avatar-wrap">
+                            <img id="match-user-photo" src="" alt="Your Photo">
+                        </div>
+                        <div class="heart-icon">❤️</div>
+                        <div class="avatar-wrap partner-avatar-wrap">
+                            <img id="match-partner-photo" src="" alt="Match Photo">
+                        </div>
+                    </div>
+                    <div class="match-details">
+                        <p>You and <strong id="match-partner-name">Partner</strong> are a perfect match!</p>
+                    </div>
+                    <button type="button" id="restart-btn" class="btn outline-btn">Start Over</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
